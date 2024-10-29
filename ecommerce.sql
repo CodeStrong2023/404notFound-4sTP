@@ -101,3 +101,47 @@ CREATE TABLE pedidos (
   CONSTRAINT pedidos_ibfk_1 FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table productos
+--
+
+DROP TABLE IF EXISTS productos;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE productos (
+  id_producto int NOT NULL AUTO_INCREMENT,
+  nombre varchar(100) NOT NULL,
+  descripcion text,
+  precio decimal(10,2) NOT NULL,
+  stock int NOT NULL,
+  foto varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  fecha_creacion datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  fecha_actualizacion datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  precio_comparacion decimal(10,2) DEFAULT NULL,
+  categoria varchar(255) DEFAULT NULL,
+  PRIMARY KEY (id_producto)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping routines for database 'ecommerce'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+INSERT INTO ecommerce.productos (nombre, descripcion, precio, stock, foto, precio_comparacion, categoria) VALUES
+('Vino Blanco Dulce - Marló Bianchi', 'VINO BLANCO', 5900.00, 30, 'https://i.ibb.co/dmC1cNX/0553f4f9-409e-4450-bcc6-a39408894706.jpg', 11800.00, 'vino-blanco'),
+('Vino Blanco Dulce - Tardío Desdén', 'VINO DULCE', 6000.00, 35, 'https://i.ibb.co/qdt5ctx/Whats-App-Image-2024-09-27-at-21-36-37.jpg', 12000.00, 'vino-blanco'),
+('Vino Tinto Cabernet - Suavignon Argana', 'CABERNET', 7000.00, 25, 'https://i.ibb.co/2Mqq911/Whats-App-Image-2024-09-27-at-21-36-37-3.jpg', 14000.00, 'vino-tinto'),
+('Vino Tinto - Espacio Malbec Bodega Rubio', 'MALBEC', 8500.00, 15, 'https://i.ibb.co/bHBPZSZ/Whats-App-Image-2024-09-27-at-21-36-38.jpg', 17000.00, 'vino-tinto'),
+('Vino Tinto Eugenio Bustos Malbec Bodega La Celia', 'EUGENIO', 8000.00, 20, 'https://i.ibb.co/8YZngQq/Whats-App-Image-2024-09-27-at-21-38-37.jpg', 16000.00, 'vino-tinto');
+
+-- Dump completed on 2024-10-25 22:43:29
