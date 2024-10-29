@@ -59,3 +59,45 @@ CREATE TABLE `clientes` (
   UNIQUE KEY `email_UNIQUE` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+
+--
+-- Table structure for table metodos_pago
+--
+
+DROP TABLE IF EXISTS metodos_pago;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE metodos_pago (
+  id_metodo_pago int NOT NULL AUTO_INCREMENT,
+  id_cliente int NOT NULL,
+  tipo varchar(50) NOT NULL,
+  nombre_titular varchar(100) NOT NULL,
+  numero_tarjeta varchar(255) NOT NULL,
+  fecha_expiracion date NOT NULL,
+  cvv varchar(4) NOT NULL,
+  fecha_registro datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id_metodo_pago),
+  KEY fk_metodos_pago_cliente_idx (id_cliente),
+  CONSTRAINT fk_metodos_pago_cliente FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table pedidos
+--
+
+DROP TABLE IF EXISTS pedidos;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE pedidos (
+  id_pedido int NOT NULL AUTO_INCREMENT,
+  id_cliente int DEFAULT NULL,
+  fecha_pedido datetime DEFAULT CURRENT_TIMESTAMP,
+  total decimal(10,2) DEFAULT NULL,
+  estado enum('pendiente','procesado','enviado','entregado','cancelado') DEFAULT 'pendiente',
+  PRIMARY KEY (id_pedido),
+  KEY idx_pedido_cliente (id_cliente),
+  CONSTRAINT pedidos_ibfk_1 FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
