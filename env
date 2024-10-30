@@ -1,0 +1,11 @@
+DB_HOST=localhost  
+DB_USER=root
+DB_PASSWORD=admin
+#en DB_PASSWORD iria el password de la base de datos mysql workbench
+DB_NAME=ecommerce
+#en DB_NAME iria el nombre de la base de datos que se creo en mysql workbench 
+DB_CONNECTION_LIMIT=10  
+DB_QUEUE_LIMIT=0 
+PORT=8080
+PAYPAL_CLIENT_ID=
+PAYPAL_SECRET=
