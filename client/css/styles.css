@@ -1,0 +1,402 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+/* Ajustes de fuentes y espaciados en dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 80%; /* Ajusta el tamaño del logo en móviles */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Pone los enlaces uno debajo del otro */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    .icon-circle {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+
+    /* Ajustes para textos y secciones */
+    h1, .title-collection, .reviews-title {
+        font-size: 1.2rem; /* Reducir tamaño de títulos */
+    }
+
+    .video-overlay h1 {
+        font-size: 20px;
+    }
+
+    .video-overlay p {
+        font-size: 1.2rem;
+    }
+
+    /* Ajustes para slideshow */
+    .slide img {
+        width: 100%;
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    /* Ajustes de espaciado y diseño */
+    .container, .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cart-icon, .login-icon {
+        top: 10px;
+        font-size: 16px;
+    }
+
+    .cart-icon {
+        right: 20px;
+    }
+
+    .login-icon {
+        right: 50px;
+    }
+
+    /* Ajustes del pop-up de carrito */
+    .cart-popup {
+        width: 100%;
+        max-width: 400px;
+        right: -100%;
+    }
+
+    .cart-popup.active {
+        right: 0;
+    }
+
+    #cart-popup-overlay, #login-popup-overlay {
+        display: block;
+    }
+
+    /* Ajuste de las tarjetas de producto */
+    .col-md-4, .col-md-6, .col-md-3 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* Ajustes de imagenes dentro de productos */
+    .card-img-top, .perfil-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen-badge-paypal img {
+        max-width: 90%;
+    }
+
+    .navbar-toggler-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    /* Mostrar el menú colapsado */
+    .navbar.show .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Ajuste del vídeo */
+    .video-banner {
+        height: auto;
+    }
+
+    .banner-video {
+        object-fit: contain;
+    }
+
+    /* Ajustes del pie de página */
+    footer {
+        text-align: left;
+    }
+}
+
+/* Correcciones de padding y márgenes */
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar {
+    padding: 10px 15px;
+}
+
+/* Evitar que imágenes se desborden */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes para evitar desbordamiento horizontal */
+html, body {
+    overflow-x: hidden;
+}
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center; /* Alinear verticalmente los íconos */
+}
+
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    padding-left: 4px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    color: #555;
+
+}
+
+.navbar-nav .nav-link {
+    padding: 0 10px; /* Ajuste del padding para centrar */
+}
+
+.icon-circle i {
+    font-size: 18px;
+}
+
+
+.navbar {
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.navbar-brand {
+    margin-bottom: -72px;
+    font-size: 1.8rem;
+    margin-top: -66px;
+    text-align: center;
+}
+
+.navbar-nav {
+    justify-content: center; 
+    width: 100%; 
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255 255 255 / 90%);
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: rgb(205 185 185);
+}
+.collapse.navbar-collapse {
+    font-weight: 400;
+    font-size: 12px;
+    LETTER-SPACING: 4px;
+}
+.scrolling-content span {
+    padding-right: 21px;
+    padding-left: 21px;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+}
+
+.video-banner {
+    position: relative;
+    width: 100%;
+  
+    height: 72vh;
+    overflow: hidden;
+}
+
+.banner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    width: 54%;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #fff2f229;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 4;
+}
+
+.video-overlay h1 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.video-overlay p {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+
+.video-overlay .btn {
+    margin-top: 20px;
+}
+
+.bg-light {
+    background-color: #5a0001!important;
+   
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(191 191 191 / 70%);
+}
+
+.btn-light {
+    color: #ffffff;
+    background-color: #5a0001;
+    border-color: #2e0e0f;
+}
+
+.btn-light:hover {
+    color: #ffffff;
+    background-color: #420808;
+    border-color: #292929;
+}
+.scrolling-text {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 999;
+}
+
+.scrolling-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 20s linear infinite;
+}
+.sticky-top {
+    position: sticky;
+    top: 0; /* Pegado en la parte superior */
+    z-index: 1030; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); /* Desplazarse completamente a la izquierda */
+    }
+}
+
+
+.title-collection{
+    text-align: center;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    vertical-align: middle;
+    width: 100%;
+    height: 581px;
+  
+
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 43px;
+    margin-top: -22px;
+    margin-left: 16px;
+    margin-right: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 43px;
+    transition: 0.6s ease;
+    border-radius: 55px 55px 55px 55px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 55px 55px 55px 55px;
+}
+
+.prev:hover, .next:hover {
+    text-decoration: none;
+    background-color: rgb(200 166 166 / 37%);
+}
+
+.title-collection {
+   
+    text-shadow: 2px 2px 4px rgba(128, 0, 32, 0.7); 
+    font-weight: bold;
+  
+    font-size: 2rem;
+  }
+
+
+  .card-title {
+    margin-bottom: .75rem;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+button.btn.btn-primary.add-to-cart{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #5a0001;
+    border-color: #292929;
+}
