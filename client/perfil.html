@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario - Mi Ecommerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="index.html"><img src="assets/logovino.svg" width="50%"></a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="productos.html">TODOS NUESTROS VINOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vino-blanco.html">VINO BLANCO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vino-tinto.html">VINO TINTO</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 text-center user-photo">
+            <img id="usuario-foto" src="assets/default-profile.png" alt="Foto de Perfil" class="img-fluid perfil-img">
+            <h3 id="usuario-nombre"></h3>
+        </div>
+        <div class="col-md-8">
+            <div class="card perfil-card">
+                <div class="perfil-detalles">
+                    <h5 class="card-title">Detalles del Usuario</h5>
+                    <p><span>Nombre:</span> <span id="detalle-nombre"></span></p>
+                    <p><span>Email:</span> <span id="detalle-email"></span></p>
+                    <p><span>Dirección:</span> <span id="usuario-direccion"></span></p>
+                    <p><span>Fecha de Registro:</span> <span id="usuario-fecha-registro"></span></p>
+                    <button id="logout-button" class="btn btn-danger btn-block">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/perfil.js"></script>
+</body>
+</html>
