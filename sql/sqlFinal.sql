@@ -138,10 +138,10 @@ CREATE TABLE productos (
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 INSERT INTO ecommerce.productos (nombre, descripcion, precio, stock, foto, precio_comparacion, categoria) VALUES
-('Vino Blanco Dulce - Marló Bianchi', 'VINO BLANCO', 5900.00, 30, 'https://i.ibb.co/dmC1cNX/0553f4f9-409e-4450-bcc6-a39408894706.jpg', 11800.00, 'vino-blanco'),
-('Vino Blanco Dulce - Tardío Desdén', 'VINO DULCE', 6000.00, 35, 'https://i.ibb.co/qdt5ctx/Whats-App-Image-2024-09-27-at-21-36-37.jpg', 12000.00, 'vino-blanco'),
-('Vino Tinto Cabernet - Suavignon Argana', 'CABERNET', 7000.00, 25, 'https://i.ibb.co/2Mqq911/Whats-App-Image-2024-09-27-at-21-36-37-3.jpg', 14000.00, 'vino-tinto'),
-('Vino Tinto - Espacio Malbec Bodega Rubio', 'MALBEC', 8500.00, 15, 'https://i.ibb.co/bHBPZSZ/Whats-App-Image-2024-09-27-at-21-36-38.jpg', 17000.00, 'vino-tinto'),
-('Vino Tinto Eugenio Bustos Malbec Bodega La Celia', 'EUGENIO', 8000.00, 20, 'https://i.ibb.co/8YZngQq/Whats-App-Image-2024-09-27-at-21-38-37.jpg', 16000.00, 'vino-tinto');
+('Vino Blanco Dulce - Marló Bianchi', 'VINO BLANCO', 12.50, 30, 'https://i.ibb.co/dmC1cNX/0553f4f9-409e-4450-bcc6-a39408894706.jpg', 15.00, 'vino-blanco'),
+('Vino Blanco Dulce - Tardío Desdén', 'VINO DULCE', 11.50, 35, 'https://i.ibb.co/qdt5ctx/Whats-App-Image-2024-09-27-at-21-36-37.jpg', 16.00, 'vino-blanco'),
+('Vino Tinto Cabernet - Suavignon Argana', 'CABERNET', 12.30, 25, 'https://i.ibb.co/2Mqq911/Whats-App-Image-2024-09-27-at-21-36-37-3.jpg', 14.90, 'vino-tinto'),
+('Vino Tinto - Espacio Malbec Bodega Rubio', 'MALBEC', 10.50, 15, 'https://i.ibb.co/bHBPZSZ/Whats-App-Image-2024-09-27-at-21-36-38.jpg', 13.10, 'vino-tinto'),
+('Vino Tinto Eugenio Bustos Malbec Bodega La Celia', 'EUGENIO', 8.00, 20, 'https://i.ibb.co/8YZngQq/Whats-App-Image-2024-09-27-at-21-38-37.jpg', 11.00, 'vino-tinto');
 
 -- Dump completed on 2024-10-25 22:43:29
