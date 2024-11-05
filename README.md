@@ -1,6 +1,6 @@
 # 404notFound-4sTP
 
-# El Rincón Del Vino 🍷
+# ![logo](client/assets/logo.png)
 
 E-commerce para la compra de vinos, diseñado para ofrecer una experiencia intuitiva a los usuarios. Este proyecto permite registrarse, navegar por diferentes productos, gestionar un carrito de compras y realizar pedidos de manera sencilla.
 
@@ -90,16 +90,22 @@ Este proyecto utiliza las siguientes dependencias de Node.js:
 
 ## Manual de Usuario 📚
 
-- **Registro e Inicio de Sesión**: Los usuarios pueden registrarse y acceder a su cuenta para realizar compras.
-  ![login](\client\assets\login.png)
-- **Navegación de Productos**: Explora una variedad de vinos y consulta sus detalles.
+- **Registro e Inicio de Sesión**: Inicia sesión en su cuenta para realizar compras.
+  
+  ![Login](client/assets/login.png)
+  
+- **Navega por nuestra web**: En el botón VER PRODUCTOS explora una variedad de vinos y consulta sus detalles.
+  
+  ![navegar](client/assets/navegación.png)
+  
 - **Gestión de Carrito**: Agrega productos al carrito, ajusta las cantidades y procede al pago.
+  
+  ![carrito](client/assets/carrito.png)
+  
 - **Proceso de Pago**: Se incluye integración con PayPal para procesar las transacciones.
+  
+  ![pago](client/assets/PayPal.png)
 
-**Inicio de Sesión** | ![login](C:\Users\enzoa\Pictures\Screenshots\login.png) |
-**Navegación de Productos** | ![navegar](ruta/a/la/captura) 
-**Carrito de Compras** | ![carrito](ruta/a/la/captura) 
-**Proceso de Pago** | ![pago](ruta/a/la/captura) 
 
 ## Estructura del Proyecto 📊
 
