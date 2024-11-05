@@ -91,6 +91,8 @@ Este proyecto utiliza las siguientes dependencias de Node.js:
         npm run dev
         ```
 
+6. Para ejecutar el e-commerce, puedes usar la extensión Live Server desde `index.html`.
+
 ## Manual de Usuario 📚
 
 - **Inicio de Sesión**: Inicia sesión en tu cuenta para realizar compras.
