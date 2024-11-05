@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  ![logo](client/assets/logo.png)
+  ![logo](client/assets/logovino.svg)
 
 </div>
 
