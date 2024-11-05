@@ -1,6 +1,11 @@
 # 404notFound-4sTP
 
-# El Rincón Del Vino 🍷
+<div align="center">
+
+  ![logo](client/assets/logo.png)
+
+</div>
+
 
 E-commerce para la compra de vinos, diseñado para ofrecer una experiencia intuitiva a los usuarios. Este proyecto permite registrarse, navegar por diferentes productos, gestionar un carrito de compras y realizar pedidos de manera sencilla.
 
@@ -47,20 +52,20 @@ Este proyecto utiliza las siguientes dependencias de Node.js:
 
 1. Clona el repositorio:
 
-    ```bash
+    ```
     git clone https://github.com/tu-usuario/el-rincon-del-vino.git
     cd el-rincon-del-vino
     ```
 
 2. Instala las dependencias:
 
-    ```bash
+    ```
     npm install
     ```
 
 3. Crea un archivo `.env` en la raíz del proyecto con las siguientes variables de entorno:
 
-    ```plaintext
+    ```
     DB_HOST=localhost
     DB_USER=tu_usuario
     DB_PASSWORD=tu_contraseña
@@ -90,16 +95,26 @@ Este proyecto utiliza las siguientes dependencias de Node.js:
 
 ## Manual de Usuario 📚
 
-- **Registro e Inicio de Sesión**: Los usuarios pueden registrarse y acceder a su cuenta para realizar compras.
-  ![login](\client\assets\login.png)
-- **Navegación de Productos**: Explora una variedad de vinos y consulta sus detalles.
-- **Gestión de Carrito**: Agrega productos al carrito, ajusta las cantidades y procede al pago.
-- **Proceso de Pago**: Se incluye integración con PayPal para procesar las transacciones.
+- **Inicio de Sesión**: Inicia sesión en tu cuenta para realizar compras.
+  
+  ![Login](client/assets/login.png)
 
-**Inicio de Sesión** | ![login](C:\Users\enzoa\Pictures\Screenshots\login.png) |
-**Navegación de Productos** | ![navegar](ruta/a/la/captura) 
-**Carrito de Compras** | ![carrito](ruta/a/la/captura) 
-**Proceso de Pago** | ![pago](ruta/a/la/captura) 
+- **Registro**: Si no tienes cuenta debes registrarte.
+
+![Registro](client/assets/registro.png)
+  
+- **Navega por nuestra web**: En el botón VER PRODUCTOS explora una variedad de vinos y consulta sus detalles.
+  
+  ![navegar](client/assets/navegación.png)
+  
+- **Carrito**: Agrega productos al carrito, ajusta las cantidades y procede al pago.
+  
+  ![carrito](client/assets/carrito.png)
+  
+- **Proceso de Pago**: Se incluye integración con PayPal para procesar las transacciones.
+  
+  ![pago](client/assets/PayPal.png)
+
 
 ## Estructura del Proyecto 📊
 
