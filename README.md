@@ -1,5 +1,3 @@
-# 404notFound-4sTP
-
 <div align="center">
 
   ![logo](client/assets/logovino.svg)
