@@ -106,6 +106,12 @@ Este proyecto utiliza las siguientes dependencias de Node.js:
 - **Navega por nuestra web**: En el botón VER PRODUCTOS explora una variedad de vinos y consulta sus detalles.
   
   ![navegar](client/assets/navegación.png)
+
+- **Categorización**: Categorías de vino tinto y blanco.
+- 
+  ![Categoría](client/assets/vino-tinto.png)
+  
+  ![Categoría](client/assets/vino-blanco.png)
   
 - **Carrito**: Agrega productos al carrito, ajusta las cantidades y procede al pago.
   
