@@ -33,7 +33,6 @@ Este proyecto utiliza las siguientes dependencias de Node.js:
 - **dotenv**: ^16.4.5
 - **express**: ^4.21.0
 - **express-handlebars**: ^8.0.1
-- **mercadopago**: ^2.0.15
 - **morgan**: ^1.10.0
 - **multer**: ^1.4.5-lts.1
 - **mysql**: ^2.18.1
@@ -108,7 +107,7 @@ Este proyecto utiliza las siguientes dependencias de Node.js:
   ![navegar](client/assets/navegación.png)
 
 - **Categorización**: Categorías de vino tinto y blanco.
-- 
+  
   ![Categoría](client/assets/vino-tinto.png)
   
   ![Categoría](client/assets/vino-blanco.png)
