@@ -858,7 +858,7 @@ p#producto-precio {
 
 .col-md-6.descripcion-tab {
     box-shadow: 0 0 46px rgb(0 0 0 / 30%);
-    /border: 1px solid #5a0001;/
+    /*border: 1px solid #5a0001;*/
 
     padding-top: 15px;
     border-radius: 31px;
